@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <script type="text/javascript">
@@ -30,7 +31,7 @@
     </script>
   </head>
   <body>
-    <div class="menu_btn">
+    <!-- <div class="menu_btn">
       <ul>
         <li class="menu_btn_li on"><a href="#"><span></span></a></li>
         <li class="menu_btn_li"><a href="#"><span></span></a></li>
@@ -38,9 +39,9 @@
         <li class="menu_btn_li"><a href="#"><span></span></a></li>
         <li class="menu_btn_li"><a href="#"><span></span></a></li>
       </ul>
-    </div>
+    </div> -->
 
-    <div class="wrap">
+    <div class="wrap" id="fullpage">
 
       <div class="overlay"></div>
 
@@ -271,7 +272,7 @@
       </header>
 
       <!-- page 1 section -->
-      <section class="page_1">
+      <section class="page_1 section" data-anchor="1st">
         <div class="main_msg">
           <div class="logo_box">
             <img src="img/page01_logo.png" alt="">
@@ -285,16 +286,16 @@
         </div>
       </section>
 
-      <section class="page_2">
+      <section class="page_2 section" data-anchor="2nd">
         <div class="center">
           <div class="phone_img">
             <img src="img/page02_iphone.png" alt="">
           </div>
           <div class="page_txt_box">
-            <div class="main_txt">
+            <div class="main_txt main_txt_2">
               <h2>맛, 멋 그리고 진심</h2>
             </div>
-            <div class="page_logo"></div>
+            <div class="page_logo page_logo_2"></div>
             <div class="page_2_txt">
               <p>매머드커피는 커피에 대한 지속적인 연구개발을 통해</p>
               <p>우수한 품질의 커피와 음료를 합리적인 가격으로</p>
@@ -307,13 +308,13 @@
         </div>
       </section>
 
-      <section class="page_3">
+      <section class="page_3 section" data-anchor="3rd">
         <div class="center">
           <div class="page_txt_box">
-            <div class="main_txt">
+            <div class="main_txt main_txt_3">
               <h2>매머드커피의 또 다른 감성</h2>
             </div>
-            <div class="page_logo"></div>
+            <div class="page_logo page_logo_3"></div>
             <div class="page_2_txt">
               <p>생활밀착형 비대면 카페인 공급처</p>
             </div>
@@ -327,7 +328,7 @@
         </div>
       </section>
 
-      <section class="page_4">
+      <section class="page_4 section" data-anchor="4th">
         <div class="half_bg"></div>
         <div class="page_body">
           <div class="page_title">
@@ -336,7 +337,7 @@
           <div class="page_sub_title">
             <p>매일매일<span>다양한 이벤트</span>에 참여하세요.</p>
           </div>
-          <div class="slide">
+          <div class="slides">
             <div class="slide_wrap">
               <div class="slide_box">
                 <ul class="slide_inner">
@@ -428,8 +429,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/easings.min.js"></script>
-    <!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <!-- <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/fullpage_effect.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
   </body>
 </html>

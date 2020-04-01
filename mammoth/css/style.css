@@ -1,14 +1,18 @@
 .center{width:100%; max-width:1060px; height:auto; margin:auto; position:relative;}
 .clear:after{content:''; display:block; clear:both;}
 
-.wrap{width:100%; height:auto; overflow:hidden;}
+.wrap{width:100%; height:auto; _overflow:hidden;}
 
 /* page move menu buttons style */
-.menu_btn{position: fixed; top:25%; right:20%; background: rgba(175, 175, 175, 0.4); border-radius: 15px 15px 15px 15px; z-index: 100; }
+/* .menu_btn{position: fixed; top:25%; right:20%; background: rgba(175, 175, 175, 0.4); border-radius: 15px 15px 15px 15px; z-index: 100; }
 .menu_btn .menu_btn_li{display: block; width:14px; height:13px; margin:7px; position:relative;}
 .menu_btn .menu_btn_li a{display:block; position:relative; width:100%; height:100%;}
 .menu_btn .menu_btn_li a span{border-radius:50%; background:#fff; width: 6px; height: 6px; display:block; position: absolute; top:50%; left: 50%; transform:translate(-50%, -50%);}
-.menu_btn .menu_btn_li.on a span{background:#d72329;}
+.menu_btn .menu_btn_li.on a span{background:#d72329;} */
+
+#fp-nav{position: fixed; top:25%; right:20%!important; background: rgba(175, 175, 175, 0.4); border-radius: 15px 15px 15px 15px; z-index: 100;}
+#fp-nav ul li a span{background:#fff; width:6px!important; height:6px!important; margin:-3px 0 0 -3px!important;}
+#fp-nav ul li a.active span{background:#d72329;}
 
 .header{position:fixed; width:100%; height:105px; z-index:999;}
 .header .center{height:100%; display:flex;}
@@ -159,15 +163,15 @@ page main text common style
 .page_4{position:relative; background:#fff;}
 .page_4 .half_bg{position:absolute; width:100%; height:45%; background:#c7c7c7; bottom:0; left:0;}
 .page_body{position:absolute; min-width:1200px; margin:auto; text-align:center; top:50%; left:50%; transform:translate(-50%,-50%);}
-.page_title{padding:0 0 25px 0;}
+.page_title{padding:0 0 25px 0; opacity:0;}
 .page_title p{font-size:26px; font-weight:bold; color:#000;}
 .page_title p:after{content:''; display:block; height:2px; margin:auto; background:#404040; width:90px;}
-.page_sub_title{padding-bottom:90px;}
+.page_sub_title{padding-bottom:90px; opacity:0;}
 .page_sub_title p{font-size:32px;}
 .page_sub_title p span{font-weight:bold; color:#d20a11;}
 
 /* page 4 style -> slide-section */
-.page_4 .slide{}
+.page_4 .slides{opacity:0;}
 .page_4 .slide_box{margin:auto; overflow: hidden;}
 .page_4 .slide_inner{}
 .page_4 .slide_li{float:left;}
@@ -200,6 +204,18 @@ page main text common style
 .slide_btn>a:hover>span:before{bottom:0;}
 .slide_btn>a:hover>span:after{top:0;}
 .slide_btn>a:hover{color:#fff;}
+
+/* page 4 animaition sffsct */
+.slide_up_1{animation:slideup 0.8s ease; animation-fill-mode:forwards;opacity: 0;}
+.slide_up_2{animation:slideup 0.8s ease; animation-fill-mode:forwards;opacity: 0; animation-delay: 0.2s;}
+.slide_up_3{animation:slideup 0.8s ease; animation-fill-mode:forwards;opacity: 0; animation-delay: 0.3s;}
+
+@keyframes slideup {
+  0%{transform: translateY(200px); opacity:0;}
+  45%{transform: translateY(-15px);}
+  75%{transform: translateY(15px);}
+  100%{transform: translateY(0);opacity:1;}
+}
 
 
 

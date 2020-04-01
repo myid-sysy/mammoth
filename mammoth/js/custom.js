@@ -136,7 +136,7 @@ $(document).ready(function(){
     var liWidth= $(".slide_li").width() * autoLength;
     var liLength = $(".slide_li").width() * $(".slide_li").length;
     $(".slide_box").width(liWidth);
-    $(".slide, .slide_inner").width(liLength);
+    $(".slides, .slide_inner").width(liLength);
    }
 
   $(window).resize(function(){
