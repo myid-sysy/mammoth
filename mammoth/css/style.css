@@ -217,7 +217,12 @@ page main text common style
   100%{transform: translateY(0);opacity:1;}
 }
 
-
+/* page 5 style */
+.pape_5{position:relative;}
+.page_5 .insta_title p:after{width:150px;}
+.page_5 .insta_slide_wrap{margin:auto; overflow:hidden;}
+.page_5 .insta_slide_box{width:1095px; margin:0 auto; overflow:hidden;}
+.page_5 .insta_slide_inner .insta_li{float:left;}
 
 
 
