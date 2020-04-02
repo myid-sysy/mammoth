@@ -229,7 +229,7 @@ page main text common style
 .page_5 .insta_slide_box{margin:0 auto; overflow:hidden;}
 .page_5 .insta_slide_inner .insta_li{float:left;}
 .page_5 .insta_slide_inner .insta_img_box{margin:0 15px; overflow: hidden;}
-.page_5 .insta_slide_inner .insta_img{width:335px; height: 335px; overflow: hidden; cursor: pointer; transition: all 0.5s;}
+.page_5 .insta_slide_inner .insta_img{width:335px; height: 335px; overflow: hidden; cursor: pointer; _transition: all 0.5s;}
 .page_5 .insta_slide_inner .insta_img img{width:100%;}
 
 
