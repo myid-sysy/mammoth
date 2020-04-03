@@ -6,7 +6,7 @@ $(document).ready(function(){
     navigationPosition:'right',
     fixedElements: '#header',
     responsiveWidth: 730,
-    anchors:['1st', '2nd' , '3rd' ,'4th','5th'],
+    anchors:['1st', '2nd' , '3rd' ,'4th','5th', '6th'],
     afterLoad:function(anchorLink, index){
       // console.log('anchorLink:' +anchorLink+'index:' +index)
       if(anchorLink == '2nd'){
@@ -23,8 +23,9 @@ $(document).ready(function(){
         $(".insta_title").addClass("slide_up_1");
         $(".insta_sub_title").addClass("slide_up_2");
         $(".insta_slide").addClass("slide_up_3");
+        $(".mobile_insta_slide").addClass("slide_up_3");
       }
-      if(anchorLink == '4th' || anchorLink == '5th'){
+      if(anchorLink == '4th' || anchorLink == '5th' || anchorLink == '6th'){
         $(".topnav li a").css({"color":"#000"});
         $(".topnav, .hidden_sub").on("mouseleave", function(){
           $(".hidden_sub").stop().animate({height:0}, 300, function(){
