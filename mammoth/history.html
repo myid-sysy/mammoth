@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title id="text"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script type="text/javascript">
+
+      var string = "MAMMOTH COFFEE"; /* type your text here */
+      var array = string.split("");
+      var timer;
+
+      function frameLooper () {
+      	if (array.length > 0) {
+      		document.getElementById("text").innerHTML += array.shift();
+      	} else {
+      		clearTimeout(timer);
+      			}
+      	loopTimer = setTimeout('frameLooper()',200); /* change 70 for speed */
+
+      }
+      frameLooper();
+
+    </script>
+  </head>
+  <body>
+    <!-- <div class="menu_btn">
+      <ul>
+        <li class="menu_btn_li on"><a href="#"><span></span></a></li>
+        <li class="menu_btn_li"><a href="#"><span></span></a></li>
+        <li class="menu_btn_li"><a href="#"><span></span></a></li>
+        <li class="menu_btn_li"><a href="#"><span></span></a></li>
+        <li class="menu_btn_li"><a href="#"><span></span></a></li>
+      </ul>
+    </div> -->
+
+    <div class="wrap" id="fullpage">
+
+      <div class="overlay"></div>
+
+      <header class="header" id="header">
+        <div class="center">
+
+          <!-- mobile navigation -->
+          <nav class="mobile_nav">
+            <ul class="mobile_inner">
+              <li class="mobile_li">
+                <div class="mobile_logo_box">
+                  <a href="#" class="mobile_logo"></a>
+                </div>
+                <div class="close_btn">
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
+              <li class="mobile_li">
+                <a href="#" class="mobile_tit">ABOUT US</a>
+                <ul class="mobile_sub_nav">
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 커피</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 익스프레스</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">연혁</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">오시는길</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile_li">
+                <a href="#" class="mobile_tit">MENU - 매머드커피</a>
+                <ul class="mobile_sub_nav">
+                  <li class="mobile_sub_li">
+                    <a href="#">전체메뉴</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">신제품</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">32oz</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">커피</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">논커피</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">스무디</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">프라페/쉐이크</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile_li">
+                <a href="#" class="mobile_tit">MENU - 매머드익스프레스</a>
+                <ul class="mobile_sub_nav">
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 커피</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 익스프레스</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="history.html">연혁</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">오시는길</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile_li">
+                <a href="#" class="mobile_tit">STORE</a>
+                <ul class="mobile_sub_nav">
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 커피</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 익스프레스</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">연혁</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">오시는길</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile_li">
+                <a href="#" class="mobile_tit">FRANCHISE</a>
+                <ul class="mobile_sub_nav">
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 커피</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 익스프레스</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">연혁</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">오시는길</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile_li">
+                <a href="#" class="mobile_tit">CUSTOMER</a>
+                <ul class="mobile_sub_nav">
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 커피</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 익스프레스</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">연혁</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">오시는길</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="mobile_li">
+                <a href="#" class="mobile_tit">EVENT</a>
+                <ul class="mobile_sub_nav">
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 커피</a>
+                  </li>
+                  <li class="mobile_sub_li">
+                    <a href="#">매머드 익스프레스</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="menu_ico">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="logo">
+            <a href="#" class="logo_link"></a>
+          </div>
+          <ul class="topnav">
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">FRANCHISE</a></li>
+            <li><a href="#">CUSTOMER</a></li>
+            <li><a href="#">EVENT</a></li>
+          </ul>
+        </div>
+
+        <!-- hidden mega box -->
+        <div class="hidden_sub">
+          <div class="line"></div>
+          <div class="sub_nav">
+            <div class="subnav_box box_1">
+              <ul>
+                <li class="sub_nav_tit"><p>매머드커피</p></li>
+                <li><a href="#">매머드 커피</a></li>
+                <li><a href="#">매머드 익스프레스</a></li>
+                <li><a href="history.html">연혁</a></li>
+              </ul>
+            </div>
+            <div class="subnav_box box_2">
+              <ul>
+                <li class="sub_nav_tit"><p>매머드커피</p></li>
+                <li><a href="#">매머드 커피</a></li>
+                <li><a href="#">매머드 익스프레스</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">연혁</a></li>
+              </ul>
+              <ul>
+                <li class="sub_nav_tit"><p>매머드커피</p></li>
+                <li><a href="#">매머드 커피</a></li>
+                <li><a href="#">매머드 익스프레스</a></li>
+                <li><a href="#">연혁</a></li>
+              </ul>
+            </div>
+            <div class="subnav_box box_3">
+              <ul>
+                <li class="sub_nav_tit"><p>매머드커피</p></li>
+                <li><a href="#">매머드 커피</a></li>
+                <li><a href="#">매머드 익스프레스</a></li>
+                <li><a href="#">연혁</a></li>
+              </ul>
+            </div>
+            <div class="subnav_box box_4">
+              <ul>
+                <li class="sub_nav_tit"><p>매머드커피</p></li>
+                <li><a href="#">매머드 커피</a></li>
+                <li><a href="#">매머드 익스프레스</a></li>
+                <li><a href="#">연혁</a></li>
+              </ul>
+            </div>
+            <div class="subnav_box box_5">
+              <ul>
+                <li class="sub_nav_tit"><p>매머드커피</p></li>
+                <li><a href="#">매머드 커피</a></li>
+                <li><a href="#">매머드 익스프레스</a></li>
+                <li><a href="#">연혁</a></li>
+              </ul>
+            </div>
+            <div class="subnav_box box_6">
+              <ul>
+                <li class="sub_nav_tit"><p>매머드커피</p></li>
+                <li><a href="#">매머드 커피</a></li>
+                <li><a href="#">매머드 익스프레스</a></li>
+                <li><a href="#">연혁</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- history section start -->
+      <section>
+        <div class="history_ban">
+          <div class="history_bg"></div>
+          <div class="history_body">
+            <h2 class="history_tit">맛, 멋, 그리고 진심</h2>
+            <div class="history_logo"></div>
+          </div>
+        </div>
+        <div class="history_main">
+          <div class="main_body">
+            <div class="main_tit_box">
+              <h1>연혁</h1>
+              <div class="main_tit_txt">
+                <p>매머드커피가 지난 몇 년간 걸어온 길이 궁금하신가요?</p>
+                <p>연혁을 통해 매머드커피의 발자취를 한 눈에 살펴 보세요!</p>
+              </div>
+            </div>
+            <div class="history_info">
+              <p class="line">
+                <span></span>
+              </p>
+              <ul class="history_cont">
+                <li class="history_li clear">
+                  <div class="history_left">
+                    <div class="cont_imgbox">
+                      <div class="cont_imgbox_inner">
+                        <img src="img\history\sub01_02_img00.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history_right">
+                    <div class="history_dot">
+                      <div class="dot"></div>
+                      <p class="dotyear">2019</p>
+                    </div>
+                    <ul class="history_right_txt">
+                      <li class="history_right_li">
+                        <div class="right_num">
+                          <p>08</p>
+                        </div>
+                        <div class="right_con_txt">
+                          <p>물류센터 확장 이전</p>
+                          <p>전국 직배송 물류 시스템 도입</p>
+                        </div>
+                      </li>
+                      <li class="history_right_li">
+                        <div class="right_num">
+                          <p>06</p>
+                        </div>
+                        <div class="right_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 70호점 돌파</p>
+                        </div>
+                      </li>
+                      <li class="history_right_li">
+                        <div class="right_num">
+                          <p>05</p>
+                        </div>
+                        <div class="right_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 60호점 돌파</p>
+                        </div>
+                      </li>
+                      <li class="history_right_li">
+                        <div class="right_num">
+                          <p>02</p>
+                        </div>
+                        <div class="right_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 50호점 돌파</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="history_li clear">
+                  <div class="history_lefts">
+                    <div class="history_dot">
+                      <div class="dot"></div>
+                      <p class="dotyear">2018</p>
+                    </div>
+                    <ul class="history_left_txt">
+                      <li class="history_left_li">
+                        <div class="left_con_txt">
+                          <p>영남센터 설립</p>
+                        </div>
+                        <div class="left_num">
+                          <p>12</p>
+                        </div>
+                      </li>
+                      <li class="history_left_li">
+                        <div class="left_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 70호점 돌파</p>
+                        </div>
+                        <div class="left_num">
+                          <p>06</p>
+                        </div>
+                      </li>
+                      <li class="history_left_li">
+                        <div class="left_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 60호점 돌파</p>
+                        </div>
+                        <div class="left_num">
+                          <p>05</p>
+                        </div>
+                      </li>
+                      <li class="history_left_li">
+                        <div class="left_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 50호점 돌파</p>
+                        </div>
+                        <div class="left_num">
+                          <p>02</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div> <!--end of history_info-->
+          </div> <!--end of main_body-->
+        </div> <!--end of history_main-->
+      </section>
+      <p class="text" style="position:fixed; top:100px; left:100px; font-size:50px; font-weight:bold; color:#333;">00</p>
+      <section class="section footer" data-anchor="6th">
+        <div class="center">
+          <div class="page_inner">
+            <div class="page_logo"></div>
+            <ul class="footer_btn">
+              <li><a href="#">브랜드 소개</a></li>
+              <li><a href="#">보도자료</a></li>
+              <li><a href="#">창업안내</a></li>
+              <li><a href="#">오시는길</a></li>
+            </ul>
+            <div class="footer_pc_txt">
+              <p>본사: 서울특별시 강남구 논현로 159길 34 (주)매머드커피랩 (우)06029 / 영남센터: 부산광역시 남구 문현 금융로 40, A동 2층 222호 (우)48400</p>
+              <p>대표이사 : 김범수, 최경환 | 대표번호 : 02-515-1645 | 대표메일 : help@mammoth.coffee</p>
+              <p>제안서 수신 전용 메일 : offer@mammoth.coffee | 마케팅 및 제휴 관련문의 : pr@mammoth.coffee</p>
+              <p>Copyright (c) 2017 MAMMOTH COFFEE. All right reserved.</p>
+            </div>
+            <div class="footer_mobile_txt">
+              <p>본사: 서울특별시 강남구 논현로 159길 34 (주)매머드커피랩 (우)06029</p>
+              <p>영남센터: 부산광역시 남구 문현 금융로 40, A동 2층 222호 (우)48400</p>
+              <p>대표이사 : 김범수, 최경환 | 대표번호 : 02-515-1645</p>
+              <p>대표메일 : help@mammoth.coffee</p>
+              <p>제안서 수신 전용 메일 : offer@mammoth.coffee | 마케팅 및 제휴 관련문의 : pr@mammoth.coffee</p>
+              <p>Copyright (c) 2017 MAMMOTH COFFEE. All right reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $(window).scroll(function(){
+          var scroll = $(window).scrollTop();
+          var historyTop= $(".history_cont").offset().top;
+          $(".text").text(scroll-$(window).height()/2);
+          $(".line>span").css({height:scroll-historyTop+$(window).height()/2});
+        });
+
+      });
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- --- -->
