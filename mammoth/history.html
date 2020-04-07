@@ -273,7 +273,6 @@
       </header>
 
       <!-- history section start -->
-      <section>
         <div class="history_ban">
           <div class="history_bg"></div>
           <div class="history_body">
@@ -296,19 +295,19 @@
               </p>
               <ul class="history_cont">
                 <li class="history_li clear">
-                  <div class="history_left">
+                  <div class="history_left left">
                     <div class="cont_imgbox">
                       <div class="cont_imgbox_inner">
                         <img src="img\history\sub01_02_img00.png" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="history_right">
+                  <div class="history_right ">
                     <div class="history_dot">
                       <div class="dot"></div>
                       <p class="dotyear">2019</p>
                     </div>
-                    <ul class="history_right_txt">
+                    <ul class="history_right_txt right">
                       <li class="history_right_li">
                         <div class="right_num">
                           <p>08</p>
@@ -351,7 +350,7 @@
                       <div class="dot"></div>
                       <p class="dotyear">2018</p>
                     </div>
-                    <ul class="history_left_txt">
+                    <ul class="history_left_txt left">
                       <li class="history_left_li">
                         <div class="left_con_txt">
                           <p>영남센터 설립</p>
@@ -385,14 +384,118 @@
                         </div>
                       </li>
                     </ul>
+                    <div class="history_right_img right">
+                      <div class="cont_imgbox">
+                        <div class="cont_imgbox_inner">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="history_li clear">
+                  <div class="history_left left">
+                    <div class="cont_imgbox">
+                      <div class="cont_imgbox_inner" style="padding:0 8%;">
+                        <img src="img\history\sub01_02_img01.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="history_right">
+                    <div class="history_dot">
+                      <div class="dot"></div>
+                      <p class="dotyear">2017</p>
+                    </div>
+                    <ul class="history_right_txt right">
+                      <li class="history_right_li">
+                        <div class="right_num">
+                          <p>08</p>
+                        </div>
+                        <div class="right_con_txt">
+                          <p>물류센터 확장 이전</p>
+                          <p>전국 직배송 물류 시스템 도입</p>
+                        </div>
+                      </li>
+                      <li class="history_right_li">
+                        <div class="right_num">
+                          <p>06</p>
+                        </div>
+                        <div class="right_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 70호점 돌파</p>
+                        </div>
+                      </li>
+                      <li class="history_right_li">
+                        <div class="right_num">
+                          <p>05</p>
+                        </div>
+                        <div class="right_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 60호점 돌파</p>
+                        </div>
+                      </li>
+                      <li class="history_right_li">
+                        <div class="right_num">
+                          <p>02</p>
+                        </div>
+                        <div class="right_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 50호점 돌파</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="history_li clear">
+                  <div class="history_lefts ">
+                    <div class="history_dot">
+                      <div class="dot"></div>
+                      <p class="dotyear">2016</p>
+                    </div>
+                    <ul class="history_left_txt left">
+                      <li class="history_left_li">
+                        <div class="left_con_txt">
+                          <p>물류센터 확장 이전</p>
+                          <p>전국 직배송 물류 시스템 도입</p>
+                        </div>
+                        <div class="left_num">
+                          <p>08</p>
+                        </div>
+                      </li>
+                      <li class="history_left_li">
+                        <div class="left_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 70호점 돌파</p>
+                        </div>
+                        <div class="left_num">
+                          <p>06</p>
+                        </div>
+                      </li>
+                      <li class="history_left_li">
+                        <div class="left_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 60호점 돌파</p>
+                        </div>
+                        <div class="left_num">
+                          <p>05</p>
+                        </div>
+                      </li>
+                      <li class="history_left_li">
+                        <div class="left_con_txt">
+                          <p>매머드 익스프레스 총 출점 매장 수 50호점 돌파</p>
+                        </div>
+                        <div class="left_num">
+                          <p>02</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="history_right_img right">
+                    <div class="cont_imgbox">
+                      <div class="cont_imgbox_inner">
+                        <img src="img\history\sub01_02_img02.png" alt="">
+                      </div>
+                    </div>
                   </div>
                 </li>
               </ul>
             </div> <!--end of history_info-->
           </div> <!--end of main_body-->
         </div> <!--end of history_main-->
-      </section>
-      <p class="text" style="position:fixed; top:100px; left:100px; font-size:50px; font-weight:bold; color:#333;">00</p>
       <section class="section footer" data-anchor="6th">
         <div class="center">
           <div class="page_inner">
@@ -431,14 +534,30 @@
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
+        var dot = $(".dot");
 
         $(window).scroll(function(){
           var scroll = $(window).scrollTop();
           var historyTop= $(".history_cont").offset().top;
+          var coloredLine = $(".line>span");
+          var coloredLineTop=coloredLine.offset().top;
+
           $(".text").text(scroll-$(window).height()/2);
           $(".line>span").css({height:scroll-historyTop+$(window).height()/2});
-        });
 
+          for(var i =0; i<$(".dot").length; i++){
+            if(coloredLineTop+coloredLine.height() >= $(".dot").eq(i).offset().top){
+              $(".left").eq(i).addClass("fadeleft");
+              $(".right").eq(i).addClass("faderight");
+            }
+          }
+
+          if(scroll >0 ){
+            $(".header").css({"background":"rgba(0,0,0,0.5)"})
+          } else {
+            $(".header").css({"background":"transparent"})
+          }
+        });
       });
 
     </script>

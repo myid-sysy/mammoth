@@ -142,6 +142,17 @@
   .footer .footer_btn li>a{line-height: 35px;}
   .footer .footer_mobile_txt p{font-size: 14px; line-height: 25px;}
 
+  /* history page style */
+  .history_ban .history_bg{height: 400px;}
+  .history_main{padding: 70px 0;}
+  .history_main .main_tit_box h1{font-size: 30px;}
+  .history_main .main_tit_box .main_tit_txt>p{font-size: 16px;}
+  .history_cont .history_right .history_right_txt{padding-left:20px;}
+  .history_cont .history_lefts .history_left_txt{padding-right: 20px;}
+  .history_cont .history_li{padding:30px 0;}
+  .history_cont .cont_imgbox_inner{padding:0 10%;}
+
+
 }
 
 @media screen and (max-width:620px){
